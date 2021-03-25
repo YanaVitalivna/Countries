@@ -21,7 +21,7 @@ class Router {
         // assemble mvp structure screen
         let presentedChild: T = ControllersFabric.performAssemnling(type: T.self as! AnyClass, with: data)
         
-        self.performPresentation(of: presentedChild, using: presentationType, animated: animated)
+        performPresentation(of: presentedChild, using: presentationType, animated: animated)
     }
     
     
@@ -37,12 +37,17 @@ class Router {
         
         switch presentionType {
         case .present(let viewController): // present vc
-            guard let child = child as? UIViewController else { fatalError("child should be represented as UIViewController") }
+            guard let child = child as? UIViewController else {
+                fatalError("child should be represented as UIViewController")
+            }
             
             viewController.present(child, animated: animated, completion: nil)
             
         case .push(let navigationController): // push in navigation controller
-            guard let child = child as? UIViewController else { fatalError("child should be represented as UIViewController") }
+            guard let child = child as? UIViewController else {
+                fatalError("child should be represented as UIViewController")
+            }
+            
             navigationController.pushViewController(child, animated: true)
             
         case .custom(let handler):

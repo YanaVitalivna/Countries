@@ -14,21 +14,16 @@ extension UIStoryboard {
         case countriesFlow = "Countries"
         
         func initiate(with bundle: Bundle = .main) -> UIStoryboard {
-            return UIStoryboard.init(name: self.rawValue, bundle: bundle)
+            return UIStoryboard.init(name: rawValue, bundle: bundle)
         }
     }
     
     func initiateVC<T: UIViewController>(_ type: T.Type) -> T {
-        guard let vc = self.instantiateViewController(withIdentifier: T.describing) as? T else {
+        guard let vc = instantiateViewController(withIdentifier: T.describing) as? T else {
             fatalError("Some error with initiating view controller with specified type, check if cpecified right storyboard id for it!")
         }
+        
         return vc
     }
 }
 
-extension UIViewController {
-   
-    static var describing: String {
-        return String.init(describing: self.self)
-    }
-}

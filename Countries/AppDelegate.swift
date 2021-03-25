@@ -15,11 +15,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         
-        self.window = UIWindow()
-        self.window?.makeKeyAndVisible()
+        window = UIWindow()
+        window?.makeKeyAndVisible()
         
         let navVC = UINavigationController()
-        self.window?.rootViewController = navVC
+        window?.rootViewController = navVC
         
         Router.present(CountriesViewController.self, using: .push(in: navVC))
         

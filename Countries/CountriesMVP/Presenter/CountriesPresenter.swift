@@ -18,37 +18,25 @@ class CountriesPresenter: CountriesPresenterProtocol {
     }
     
     func loadData() {
-        self.view?.showActivityIndicator()
-        self.model.loadData()
+        view?.showActivityIndicator()
+        model.loadData()
     }
     
     func getCountryBorders() {
-        self.model.getCountryBorders()
+        model.getCountryBorders()
     }
     
     func getNumberOfCountries() -> Int {
-        return self.model.getNumberOfCountries()
+        model.getNumberOfCountries()
     }
     
     func getCountry(for index: Int) -> Country {
-        return self.model.getCountry(for: index)
+        model.getCountry(for: index)
     }
     
     func getSelectedCountry() -> Country? {
-        return self.model.getSelectedCountry()
+        model.getSelectedCountry()
     }
     
 }
 
-//MARK: - CountriesModelUpdatedProtocol methods
-extension CountriesPresenter: CountriesModelUpdatedProtocol {
-    func countriesLoaded(with info: [Country]) {
-        self.view?.hideActivityIndicator()
-        self.view?.countriesLoaded(with: info)
-    }
-    
-    func error(info: String) {
-        self.view?.hideActivityIndicator()
-        self.view?.error(info: info)
-    }
-}

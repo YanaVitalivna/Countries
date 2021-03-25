@@ -19,8 +19,8 @@ class CountriesModel: CountriesModelProtocol {
     }
     
     func loadData() {
-        guard self.selectedCountry == nil else {
-            return self.getCountryBorders()
+        guard selectedCountry == nil else {
+            return getCountryBorders()
         }
         
         GetCountriesList.init(successCallback: { [weak self] (code, countries) in
@@ -34,9 +34,11 @@ class CountriesModel: CountriesModelProtocol {
     }
     
     func getCountryBorders() {
-        guard self.selectedCountry != nil else { return }
+        guard selectedCountry != nil else {
+            return
+        }
        
-        GetCountryBordersRequest.init(borders: self.selectedCountry!.borders, successCallback: { [weak self] (code, info) in
+        GetCountryBordersRequest.init(borders: selectedCountry!.borders, successCallback: { [weak self] (code, info) in
             self?.countries = info
             self?.presenter?.countriesLoaded(with: info)
             
@@ -47,14 +49,14 @@ class CountriesModel: CountriesModelProtocol {
     }
     
     func getNumberOfCountries() -> Int {
-        return self.countries.count
+        countries.count
     }
     
     func getCountry(for index: Int) -> Country {
-        return self.countries[index]
+        countries[index]
     }
     
     func getSelectedCountry() -> Country? {
-        return self.selectedCountry
+        selectedCountry
     }
 }

@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		087092EE86A021DB37FC59C9 /* Pods_Countries.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F455697EE5E2DAB315E11E48 /* Pods_Countries.framework */; };
+		1DC1424D260C8EAE00B4533D /* CountriesViewController + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DC1424C260C8EAE00B4533D /* CountriesViewController + Extension.swift */; };
+		1DC14250260C8EE900B4533D /* CountriesPresenter + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DC1424F260C8EE900B4533D /* CountriesPresenter + Extension.swift */; };
+		1DC14257260C8F5C00B4533D /* UIViewController + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DC14256260C8F5C00B4533D /* UIViewController + Extension.swift */; };
 		2C52B89B223E3BD000A7B6AB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C52B89A223E3BD000A7B6AB /* AppDelegate.swift */; };
 		2C52B89D223E3BD000A7B6AB /* CountriesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C52B89C223E3BD000A7B6AB /* CountriesViewController.swift */; };
 		2C52B8A0223E3BD000A7B6AB /* Countries.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C52B89E223E3BD000A7B6AB /* Countries.storyboard */; };
@@ -21,12 +24,15 @@
 		2C52B8BD223E48B800A7B6AB /* GetCountriesList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C52B8BC223E48B800A7B6AB /* GetCountriesList.swift */; };
 		2C52B8BF223E4A2B00A7B6AB /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C52B8BE223E4A2B00A7B6AB /* Constants.swift */; };
 		2C52B8C1223E4E7100A7B6AB /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C52B8C0223E4E7100A7B6AB /* Router.swift */; };
-		2C52B8C3223E4EC700A7B6AB /* VCFabric.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C52B8C2223E4EC700A7B6AB /* VCFabric.swift */; };
-		2C52B8C5223E4F2F00A7B6AB /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C52B8C4223E4F2F00A7B6AB /* Extensions.swift */; };
+		2C52B8C3223E4EC700A7B6AB /* ViewControllersFabric.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C52B8C2223E4EC700A7B6AB /* ViewControllersFabric.swift */; };
+		2C52B8C5223E4F2F00A7B6AB /* UIStoryboard + Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C52B8C4223E4F2F00A7B6AB /* UIStoryboard + Extensions.swift */; };
 		2C52B8C7223E5F6C00A7B6AB /* GetCountryBordersRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C52B8C6223E5F6C00A7B6AB /* GetCountryBordersRequest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1DC1424C260C8EAE00B4533D /* CountriesViewController + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CountriesViewController + Extension.swift"; sourceTree = "<group>"; };
+		1DC1424F260C8EE900B4533D /* CountriesPresenter + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CountriesPresenter + Extension.swift"; sourceTree = "<group>"; };
+		1DC14256260C8F5C00B4533D /* UIViewController + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController + Extension.swift"; sourceTree = "<group>"; };
 		2C52B897223E3BD000A7B6AB /* Countries.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Countries.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C52B89A223E3BD000A7B6AB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2C52B89C223E3BD000A7B6AB /* CountriesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountriesViewController.swift; sourceTree = "<group>"; };
@@ -42,8 +48,8 @@
 		2C52B8BC223E48B800A7B6AB /* GetCountriesList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetCountriesList.swift; sourceTree = "<group>"; };
 		2C52B8BE223E4A2B00A7B6AB /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		2C52B8C0223E4E7100A7B6AB /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
-		2C52B8C2223E4EC700A7B6AB /* VCFabric.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VCFabric.swift; sourceTree = "<group>"; };
-		2C52B8C4223E4F2F00A7B6AB /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		2C52B8C2223E4EC700A7B6AB /* ViewControllersFabric.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllersFabric.swift; sourceTree = "<group>"; };
+		2C52B8C4223E4F2F00A7B6AB /* UIStoryboard + Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIStoryboard + Extensions.swift"; sourceTree = "<group>"; };
 		2C52B8C6223E5F6C00A7B6AB /* GetCountryBordersRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetCountryBordersRequest.swift; sourceTree = "<group>"; };
 		5AD22F736F4E8CA0B20B0892 /* Pods-Countries.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Countries.release.xcconfig"; path = "Target Support Files/Pods-Countries/Pods-Countries.release.xcconfig"; sourceTree = "<group>"; };
 		C6D71FE472393119840DA2A7 /* Pods-Countries.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Countries.debug.xcconfig"; path = "Target Support Files/Pods-Countries/Pods-Countries.debug.xcconfig"; sourceTree = "<group>"; };
@@ -62,6 +68,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1DC14254260C8F4400B4533D /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				2C52B8C4223E4F2F00A7B6AB /* UIStoryboard + Extensions.swift */,
+				1DC14256260C8F5C00B4533D /* UIViewController + Extension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
 		2C52B88E223E3BD000A7B6AB = {
 			isa = PBXGroup;
 			children = (
@@ -85,8 +100,8 @@
 			children = (
 				2C52B89A223E3BD000A7B6AB /* AppDelegate.swift */,
 				2C52B8C0223E4E7100A7B6AB /* Router.swift */,
-				2C52B8C2223E4EC700A7B6AB /* VCFabric.swift */,
-				2C52B8C4223E4F2F00A7B6AB /* Extensions.swift */,
+				2C52B8C2223E4EC700A7B6AB /* ViewControllersFabric.swift */,
+				1DC14254260C8F4400B4533D /* Extension */,
 				2C52B8B7223E437900A7B6AB /* BaseMVPInterface */,
 				2C52B8B8223E466E00A7B6AB /* CountriesMVP */,
 				2C52B8BB223E469E00A7B6AB /* Network */,
@@ -102,6 +117,7 @@
 			children = (
 				2C52B89E223E3BD000A7B6AB /* Countries.storyboard */,
 				2C52B89C223E3BD000A7B6AB /* CountriesViewController.swift */,
+				1DC1424C260C8EAE00B4533D /* CountriesViewController + Extension.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -118,6 +134,7 @@
 			isa = PBXGroup;
 			children = (
 				2C52B8AF223E3FB000A7B6AB /* CountriesPresenter.swift */,
+				1DC1424F260C8EE900B4533D /* CountriesPresenter + Extension.swift */,
 			);
 			path = Presenter;
 			sourceTree = "<group>";
@@ -198,7 +215,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1010;
-				LastUpgradeCheck = 1010;
+				LastUpgradeCheck = 1230;
 				ORGANIZATIONNAME = Yana;
 				TargetAttributes = {
 					2C52B896223E3BD000A7B6AB = {
@@ -297,11 +314,14 @@
 				2C52B89B223E3BD000A7B6AB /* AppDelegate.swift in Sources */,
 				2C52B8AE223E3F7500A7B6AB /* CountriesProtocols.swift in Sources */,
 				2C52B8BA223E469900A7B6AB /* BaseRequest.swift in Sources */,
+				1DC14250260C8EE900B4533D /* CountriesPresenter + Extension.swift in Sources */,
 				2C52B8B2223E3FBC00A7B6AB /* CountriesModel.swift in Sources */,
-				2C52B8C5223E4F2F00A7B6AB /* Extensions.swift in Sources */,
+				1DC1424D260C8EAE00B4533D /* CountriesViewController + Extension.swift in Sources */,
+				2C52B8C5223E4F2F00A7B6AB /* UIStoryboard + Extensions.swift in Sources */,
+				1DC14257260C8F5C00B4533D /* UIViewController + Extension.swift in Sources */,
 				2C52B8B0223E3FB000A7B6AB /* CountriesPresenter.swift in Sources */,
 				2C52B8B6223E437200A7B6AB /* BaseViewInterface.swift in Sources */,
-				2C52B8C3223E4EC700A7B6AB /* VCFabric.swift in Sources */,
+				2C52B8C3223E4EC700A7B6AB /* ViewControllersFabric.swift in Sources */,
 				2C52B8C7223E5F6C00A7B6AB /* GetCountryBordersRequest.swift in Sources */,
 				2C52B8BF223E4A2B00A7B6AB /* Constants.swift in Sources */,
 			);
@@ -355,6 +375,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -416,6 +437,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -453,7 +475,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = F4MAFV83H7;
 				INFOPLIST_FILE = Countries/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -473,7 +495,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = F4MAFV83H7;
 				INFOPLIST_FILE = Countries/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

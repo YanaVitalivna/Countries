@@ -31,10 +31,10 @@ class BaseRequest<T: Codable> {
          url: String,
          params: [String: Any]? = nil) {
         
-        self.method              = method
-        self.url                 = url
-        self.encoding            = encoding
-        self.params              = params
+        self.method = method
+        self.url = url
+        self.encoding = encoding
+        self.params = params
     }
     
     // MARK: - Execute
@@ -44,9 +44,9 @@ class BaseRequest<T: Codable> {
         configuration.timeoutIntervalForRequest  = 100
         configuration.timeoutIntervalForResource = 100
         
-        self.sessionManager = Alamofire.SessionManager(configuration: configuration)
+        sessionManager = Alamofire.SessionManager(configuration: configuration)
         
-        dataRequest = sessionManager.request(self.url, method: self.method, parameters: self.params, encoding: self.encoding).responseData(completionHandler: { (response) in
+        dataRequest = sessionManager.request(url, method: method, parameters: params, encoding: encoding).responseData(completionHandler: { (response) in
             
             switch response.result {
             case .success(let data):
@@ -62,21 +62,20 @@ class BaseRequest<T: Codable> {
     private func onSuccess(_ data: Data, code: Int?) {
         
         do {
-            let apiResponse = try self.map(type: T.self, from: data)
-            self.successCallback?(code, apiResponse)
-            
-        } catch {
-            
-            self.failureCallback?(code, "", error.localizedDescription)
+            let apiResponse = try map(type: T.self, from: data)
+            successCallback?(code, apiResponse)
+        }
+        catch {
+            failureCallback?(code, "", error.localizedDescription)
         }
         
     }
     
     private func map<T:Codable>(type: T.Type, from data: Data) throws -> T {
-        return try JSONDecoder().decode(type, from: data)
+        try JSONDecoder().decode(type, from: data)
     }
     
     private func onError(_ error: Error, code: Int?) {
-        self.failureCallback?(code, "", error.localizedDescription)
+        failureCallback?(code, "", error.localizedDescription)
     }
 }
